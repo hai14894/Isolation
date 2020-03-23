@@ -34,5 +34,18 @@ all_the_humans = [
 "Gini Thomas",
 "Wendy Doan",
 "Wilkins Cheng"]
-name_chosen = all_the_humans.sample
-p "You have been chosen #{name_chosen}💀💀💀"
+
+def select_rand(arr)
+    i = 0
+    while i < 7
+    selected = arr.sample()
+    p selected
+      sleep(0.5)
+      system "clear"
+      i += 1
+    end
+  
+    return "#{selected} was selected💀💀💀💀"
+  end
+  
+  puts select_rand(all_the_humans)
